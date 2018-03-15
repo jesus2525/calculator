@@ -1,3 +1,6 @@
+
+import java.time.Clock;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -338,7 +341,11 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEqualActionPerformed
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        // TODO add your handling code here:
+        String s = textFieldDisplay.getText();
+        if(s.length() > 0){
+        String subS = s.substring(0, s.length()-1);
+        textFieldDisplay.setText(subS);
+        }
     }//GEN-LAST:event_btnBackActionPerformed
 
     /**
